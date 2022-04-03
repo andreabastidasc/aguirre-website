@@ -27,3 +27,90 @@ html {
         }
     }
 }
+
+.hero-custom {
+    background-image: url('../../assets/img/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &-title {
+        @include text-hero;
+    }
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0rem;
+    &-subtitle {
+        @include subtitle;
+    }
+    &-title {
+        @include titles;
+        margin-top: .8rem;
+    }
+    &-text {
+        @include text;
+        margin-top: 2rem;
+    }
+}
+
+.work-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9rem 0rem 4rem 0rem;
+    background-image: url('../../assets/img/lightCurveBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-subtitle {
+        @include subtitle;
+    }
+    &-title {
+        @include titles;
+        margin-top: .8rem;
+        &::after {
+            display: block;
+            content: ' ';
+            border: 3px solid $blue;
+            position: absolute;
+            width: 5%;
+            margin-top: 1.5rem;
+        }
+        &-container {
+            width: 20%;
+        }
+    }
+    &-text {
+        @include text;
+        margin-top: 2rem;
+        &-container {
+            width: 40%;
+        }
+    }
+}
+
+.footer-custom {
+    background-image: url('../../assets/img/footerCurveBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 141px;
+    display: flex;
+    align-items: center;
+    padding: 0rem 12rem;
+    margin-top: 3rem;
+    &-logo {
+        width: 144px;
+        margin-top: 1.5rem;
+    }
+}

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AGUIRRE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="./styles/css/main.css" rel="stylesheet"/>
+    <link href="./assets/css/main.css" rel="stylesheet"/>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom shadow">
             <div class="container">
               <a class="navbar-brand" href="#">
                   <img src="./assets/img/logo.png" alt="Logo" width="100%" height="auto"/>
@@ -29,10 +29,10 @@
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item navbar-custom-item">
-                      <a class="nav-link navbar-custom-link" aria-current="page" href="#">Quiénes somos</a>
+                      <a class="nav-link navbar-custom-link" href="#about">Quiénes somos</a>
                     </li>
                     <li class="nav-item navbar-custom-item">
-                      <a class="nav-link navbar-custom-link" href="#">Cómo trabajamos</a>
+                      <a class="nav-link navbar-custom-link" href="#work">Cómo trabajamos</a>
                     </li>
                     <li class="nav-item navbar-custom-item">
                         <a class="nav-link navbar-custom-link" href="#">Obras</a>
@@ -48,7 +48,31 @@
               </div>
             </div>
           </nav>
+          <section class="hero-custom">
+            <h2 class="hero-custom-title">Diseñamos · Construimos · Ejecutamos</h2>
+          </section>
     </header>
+    <main>
+        <section id="about" class="container about-section">
+            <h3 class="about-section-subtitle">Aguirre Constructora</h3>
+            <h2 class="about-section-title">Quiénes somos</h2>
+            <p class="about-section-text">Somos una empresa joven, creada para brindar un asesoramiento integral <br> personalizado, generando un vinculo con el cliente. Trabajamos día a día para ofrecer <br> un servicio basado en la seriedad, la honestidad y el compromiso.</p>
+        </section>
+        <section id="work" class="work-section">
+            <div class="work-section-title-container">
+                <h2 class="work-section-title">Cómo trabajamos</h2>
+            </div>
+            <div class="work-section-text-container">
+                <p class="work-section-text mt-0">Contamos con un calificado plantel profesional y nos regimos con un sistema de gerenciamiento de nuestros proyectos que nos permite un estricto sistema de control y supervisión, asegurando calidad, seguridad y cuidado del medio ambiente.</p>
+                <p class="work-section-text">Disponemos de fuerza de trabajo, maquinaria y equipamiento propios, permitiéndonos la optimización de tiempos y costos.</p>
+                <p class="work-section-text">La empresa, cuenta en la actualidad con los recursos necesarios para brindar un servicio integral, que abarca desde el diseño de proyectos hasta la construcción.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-custom">
+        <img src="./assets/img/footerLogo.png" alt="Aguirre constructora" width="100%" height="auto" class="footer-custom-logo" />
+    </footer>
+   
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

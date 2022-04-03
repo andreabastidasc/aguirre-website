@@ -36,6 +36,7 @@ $white: #FFFFFF;
     color: $gray3;
     font-weight: 400;
     line-height: 1.3rem;
+    opacity: 0.8;
 }
 
 @mixin link {
@@ -53,5 +54,14 @@ $white: #FFFFFF;
     font-weight: 900;
     font-size: 0.8rem;
     line-height: 1rem;
+    color: $white;
+}
+
+@mixin text-hero {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 134.7%;
     color: $white;
 }
