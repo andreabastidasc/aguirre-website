@@ -1,0 +1,38 @@
+// COLORS 
+$gray1: #24243F;
+$gray3: #2B2B2D;
+$blue: #426BA9;
+
+//FONTS
+@mixin titles {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.375rem;
+    color: $gray1;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+@mixin subtitle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: $blue;
+}
+
+@mixin text-medium {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875rem;
+    color: $gray3;
+    font-weight: 500;
+    line-height: 1.375rem;
+}
+
+@mixin  text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: $gray3;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
