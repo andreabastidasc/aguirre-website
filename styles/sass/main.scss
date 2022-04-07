@@ -1,4 +1,5 @@
 @import './variables';
+@import './bootstrapStyles';
 
 html {
     margin: 0;
@@ -69,7 +70,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 9rem 0rem 4rem 0rem;
+    padding: 9rem 0rem;
     background-image: url('../../assets/img/lightCurveBg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +86,7 @@ html {
             border: 3px solid $blue;
             position: absolute;
             width: 5%;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
         &-container {
             width: 20%;
@@ -97,6 +98,132 @@ html {
         &-container {
             width: 40%;
         }
+    }
+    &-card {
+        max-width: 348px;
+        &-content {
+            padding: 1rem .5rem;
+            &-text {
+                @include text-card;
+                margin-top: 1rem;
+            }
+        }
+        &-title {
+            @include subtitle;
+            margin: 0;
+            padding: 0;
+            &-container {
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+        }
+        &-image {
+            object-fit: cover;
+        }
+        &-icon {
+            width: 40px;
+            height: 20px;
+            padding: 0;
+        }
+        &-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &-wrapper {
+            margin-top: -100px;
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+.works-section {
+    background-image: url(../../assets/img/secondaryCurveBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 0rem;
+    &-content {
+        &-title {
+            @include titles;
+            &::after {
+                display: block;
+                content: ' ';
+                border: 3px solid $blue;
+                position: relative;
+                width: 8%;
+                margin: 0 auto;
+                margin-top: 1rem;
+            }
+        }
+        &-text {
+            @include text;
+            margin-top: 1.5rem;
+        }
+    }
+    &-card {
+        border-radius: 10px !important;
+        &-image {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            box-shadow: 20px 20px 40px rgba(69, 74, 79, 0.05);
+        }
+        &-title {
+            @include subtitle;
+        }
+        &-text {
+            @include text-medium;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+        &-icon {
+            width: 12px;
+        }
+        &-accordion {
+            margin-top: -5px;
+            outline: 0;
+            border-radius: 0;
+            width: 100%;
+            border-radius: 10px !important;
+        }
+        &-container {
+            margin-top: 4rem;
+            padding: 0;
+            border-radius: 10px !important;
+        }
+    }
+  
+}
+
+.services-section {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    &-title {
+        @include titles;
+        &::after {
+            display: block;
+            content: ' ';
+            border: 3px solid $blue;
+            position: relative;
+            width: 40%;
+            margin-top: 1.5rem;
+        }
+        &-container {
+            padding: 0rem 12rem 0rem 0rem;
+        }
+    }
+    &-subtitle {
+        @include subtitle;
+        margin-top: 1.5rem;
+    }
+    &-text {
+        @include text;
+        margin-top: 2rem;
+    }
+    &-subtext {
+        @include text;
+        margin-top: 1rem;
     }
 }
 
