@@ -106,6 +106,10 @@ html {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.sidenav {
+  background-color: #426BA9;
+}
+
 .hero-custom {
   background-image: url("../../assets/img/hero.jpg");
   background-size: cover;
@@ -135,6 +139,12 @@ html {
   font-size: 2.5rem;
   line-height: 134.7%;
   color: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+  .hero-custom-title {
+    text-align: center;
+  }
 }
 
 .about-section {
@@ -202,6 +212,19 @@ html {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .work-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 9rem 2rem;
+  }
+}
+
 .work-section-subtitle {
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -229,8 +252,20 @@ html {
   margin-top: 1rem;
 }
 
+@media (max-width: 600px) {
+  .work-section-title::after {
+    width: 25%;
+  }
+}
+
 .work-section-title-container {
   width: 20%;
+}
+
+@media (max-width: 600px) {
+  .work-section-title-container {
+    width: 100%;
+  }
 }
 
 .work-section-text {
@@ -245,6 +280,13 @@ html {
 
 .work-section-text-container {
   width: 40%;
+}
+
+@media (max-width: 600px) {
+  .work-section-text-container {
+    margin-top: 2rem;
+    width: 100%;
+  }
 }
 
 .work-section-card {
@@ -322,6 +364,12 @@ html {
   padding: 8rem 0rem;
 }
 
+@media (max-width: 600px) {
+  .works-section {
+    padding: 8rem 2rem;
+  }
+}
+
 .works-section-content-title {
   font-family: 'Lato', sans-serif;
   font-size: 1.375rem;
@@ -340,6 +388,12 @@ html {
   margin-top: 1rem;
 }
 
+@media (max-width: 600px) {
+  .works-section-content-title::after {
+    width: 25%;
+  }
+}
+
 .works-section-content-text {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -352,6 +406,13 @@ html {
 
 .works-section-card {
   border-radius: 10px !important;
+}
+
+@media (max-width: 600px) {
+  .works-section-card {
+    margin-bottom: 2rem;
+    max-width: 300px;
+  }
 }
 
 .works-section-card-image {
@@ -404,6 +465,35 @@ html {
   padding-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+  .services-section {
+    padding: 8rem 2rem 4rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section-card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section-card-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
 .services-section-title {
   font-family: 'Lato', sans-serif;
   font-size: 1.375rem;
@@ -423,6 +513,12 @@ html {
 
 .services-section-title-container {
   padding: 0rem 12rem 0rem 0rem;
+}
+
+@media (max-width: 600px) {
+  .services-section-title-container {
+    padding: 0rem 2rem;
+  }
 }
 
 .services-section-subtitle {
