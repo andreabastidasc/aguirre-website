@@ -5,6 +5,21 @@ html {
     margin: 0;
 }
 
+// SPLIDE 
+.splide__arrow.splide__arrow--next {
+    display: none;
+}
+.splide__arrows.splide__arrows--ltr {
+    display: none;
+}
+.splide__arrow--next {
+    display: none;
+}
+.splide__pagination__page.is-active {
+    background: $blue !important;
+}
+
+//NAVBAR
 .navbar-custom {
     background-color: $blue;
     height: 80px;
@@ -188,6 +203,19 @@ html {
             @include text;
             margin-top: 1.5rem;
         }
+        &-button {
+            @include subtitle;
+            font-weight: 900;
+            font-size: 1rem;
+            color: $blue;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 0 auto;
+            &:hover {
+                color: $blue;
+            }
+        }
     }
     &-card {
         border-radius: 10px !important;
@@ -293,5 +321,26 @@ html {
     &-logo {
         width: 144px;
         margin-top: 1.5rem;
+    }
+}
+
+.modal-carousel-content {
+    text-align: left;
+    padding-bottom: 4rem;
+    &-title {
+        @include text-card;
+        color: $blue;
+        font-weight: 700;
+    }
+    &-list {
+        list-style: disc;
+        max-height: 368px;
+        overflow-y: scroll;
+        li {
+            @include text-card;
+            strong {
+                text-transform: capitalize;
+            }
+        }
     }
 }

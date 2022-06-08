@@ -21,6 +21,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: default;
 }
 
 .accordion-button:not(.collapsed) {
@@ -31,11 +32,13 @@
   background-color: #FFFFFF;
   width: 100%;
   padding: 2rem 2rem 1rem 2rem;
+  cursor: default;
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
   padding: 2rem 2rem;
   border-radius: 10px !important;
+  cursor: default;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -44,6 +47,7 @@
 
 .accordion-button::after {
   display: none;
+  cursor: default;
 }
 
 .accordion-button:focus {
@@ -51,6 +55,7 @@
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: default;
 }
 
 .accordion-body {
@@ -62,8 +67,38 @@
   border-radius: 10px !important;
 }
 
+.modal-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.375rem;
+  color: #24243F;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #426BA9;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 html {
   margin: 0;
+}
+
+.splide__arrow.splide__arrow--next {
+  display: none;
+}
+
+.splide__arrows.splide__arrows--ltr {
+  display: none;
+}
+
+.splide__arrow--next {
+  display: none;
+}
+
+.splide__pagination__page.is-active {
+  background: #426BA9 !important;
 }
 
 .navbar-custom {
@@ -404,6 +439,30 @@ html {
   margin-top: 1.5rem;
 }
 
+.works-section-content-button {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #426BA9;
+  font-weight: 900;
+  font-size: 1rem;
+  color: #426BA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.works-section-content-button:hover {
+  color: #426BA9;
+}
+
 .works-section-card {
   border-radius: 10px !important;
 }
@@ -569,4 +628,37 @@ html {
 .footer-custom-logo {
   width: 144px;
   margin-top: 1.5rem;
+}
+
+.modal-carousel-content {
+  text-align: left;
+  padding-bottom: 4rem;
+}
+
+.modal-carousel-content-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  color: #2B2B2D;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #426BA9;
+  font-weight: 700;
+}
+
+.modal-carousel-content-list {
+  list-style: disc;
+  max-height: 368px;
+  overflow-y: scroll;
+}
+
+.modal-carousel-content-list li {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  color: #2B2B2D;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.modal-carousel-content-list li strong {
+  text-transform: capitalize;
 }

@@ -1,5 +1,6 @@
 @import './variables';
 
+//ACCORDION
 .accordion {
     border: none;
     border-radius: 30px;
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: default;
 }
 .accordion-button:not(.collapsed) {
     color: $gray1;
@@ -22,10 +24,12 @@
     background-color: $white;
     width: 100%;
     padding: 2rem 2rem 1rem 2rem;
+    cursor: default;
 }
 .accordion-item:last-of-type .accordion-button.collapsed {
     padding: 2rem 2rem;
     border-radius: 10px !important;
+    cursor: default;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -33,11 +37,13 @@
 }
 .accordion-button::after {
     display: none;
+    cursor: default;
 }
 .accordion-button:focus {
     border-color: transparent;
     border: none;
     box-shadow: none;
+    cursor: default;
 }
 .accordion-body {
     padding: 2rem 2rem;
@@ -45,4 +51,16 @@
 .accordion-item:first-of-type .accordion-button {
     padding: 2rem 2rem;
     border-radius: 10px !important;
+}
+
+
+//MODAL 
+
+.modal-title {
+    @include titles;
+    color: $blue;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
